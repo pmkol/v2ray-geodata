@@ -13,7 +13,7 @@ PKG_RELEASE:=1
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 
 PKG_LICENSE_FILES:=LICENSE
-PKG_MAINTAINER:=openwrt-plus <git@github.com>
+PKG_MAINTAINER:=openwrt-lite <git@github.com>
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -37,8 +37,8 @@ define Package/v2ray-geosite
   LICENSE:=GPL-3.0
 endef
 
-GEOIP_URL:=https://github.com/Loyalsoldier/geoip/releases/latest/download/geoip.dat
-GEOSITE_URL:=https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+GEOIP_URL:=https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat
+GEOSITE_URL:=https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat
 
 define Build/Compile
 	( \
